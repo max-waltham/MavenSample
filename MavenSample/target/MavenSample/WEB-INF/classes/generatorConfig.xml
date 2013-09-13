@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration >
+<classPathEntry location="D:\Users\k_saito\.m2\repository\mysql\mysql-connector-java\5.1.25\mysql-connector-java-5.1.25.jar"/>
+  <context id="context1" >
+    <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://localhost:3306/s2test" userId="root" password="admin" />
+    <javaModelGenerator targetPackage="org.gdarts.batis" targetProject="MavenSample" />
+    <sqlMapGenerator targetPackage="org.gdarts.batis" targetProject="MavenSample" />
+    <javaClientGenerator targetPackage="org.gdarts.batis" targetProject="MavenSample" type="XMLMAPPER" />
+    <table schema="s2test" tableName="Items" />
+    <table schema="s2test" tableName="Categorys" />
+  </context>
+</generatorConfiguration>
